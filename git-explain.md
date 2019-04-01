@@ -61,7 +61,8 @@ It’s possible to use GitKraken.
 * Has, like almost all git hosters, built-in pull requests.  
 * Has an autobuild (CI/CD) function that runs tests and publishes it as a website that we could potentially use. (It’s basically Momotor+website hosting, only you can write the tests now, and not the TU/e staff, and you don’t get a bad grade if your tests fail.)  
 * The master branch is restricted by default. It e.g. doesn’t allow you to use a force push. (A push that rewrites history.)  
-* If you sent a pull request, and there is a option to allow write access to other people, you should always enable that.
+* ~~If you sent a pull request, and there is a option to allow write access to other people, you should always enable that.~~
+* * Actually, please add the group as reporter by the group members. GitLab doesn't do that automatically for some reason.
 * Use your username and password of GitLab when asked in SourceTree. I think there is a password reminder function somewhere but forgot where. 🤷‍♂️
 
 ### Project structure
