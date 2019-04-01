@@ -2,8 +2,8 @@
 
 ## Intro
 
-Ok, first of all apologies for the little bit abstract explanation. It’s a relatively complicated program, and I want you to know how it actually works, not just the magic commands that fix everything, because they don’t always work. And besides, we are university students, we can do this.
-I also recommend [SourceTree](https://www.sourcetreeapp.com/) as GUI to git. [GitKracken](https://www.gitkraken.com/) also works.
+Ok, first of all, apologies for the little bit abstract explanation. It’s a relatively complicated program, and I want you to know how it actually works, not just the magic commands that fix everything, because they don’t always work. And besides, we are university students, we can do this.
+I also recommend [SourceTree](https://www.sourcetreeapp.com/) as a GUI to git. [GitKraken](https://www.gitkraken.com/) also works.
 
 ## Summary
 
@@ -11,7 +11,7 @@ Ok, git is a distributed version control system. This means it’s an app that k
 
 ### Branches, commits and clones
 
-A git repo(sitory) consist of branches, the default being called ```master```. (insert bad BDSM joke here)  
+A git repo(sitory) consists of branches, the default being called ```master```. (insert bad BDSM joke here)  
 Branches consist of a pointer to the last commit.  
 Commits are small versions or snapshots of your version of the source code, consisting of a snapshot of the version of the code, a pointer to the previous commit (a ```NIL``` pointer if it is the first one) and if it is a merge commit, (a commit that merges two branches), a second (and sometimes even a third in a 🐙merge) pointer to the commit it merges. Commits also contain metadata about the date they were created and the author. (For those who follow 2IL50, the commit history is btw a DAG)
 
@@ -28,20 +28,22 @@ _(As of 1 April, there are restrictions in place to not directly push to master-
 
 There are also things called forks, which is a fancy name for a copy of a git repo in your own namespace from which you can send merge requests.
 
+**Important note**: If you fork the project, please add the 2IOA0 group as a reporter in _Project Settings_ (left down) → _Members_.
+
 ### git fetch
 
-I forgot about one of the commands: ```git fetch```. Git has a possibility to bookmark repo-urls. For those repo’s the branches are mirrored to the local git repo on the PC; ```origin/master``` for example is the Git branch on the main repo if you called that main repo ```origin```. ```Git fetch``` refreshes those repos.
+I forgot about one of the commands: ```git fetch```. Git has a possibility to bookmark repo-URLs. For those repos the branches are mirrored to the local git repo on the PC; ```origin/master``` for example is the Git branch on the main repo if you called that main repo ```origin```. ```Git fetch``` refreshes those repos.
 
 ## Practical things
 
-Start by cloning the repo. I recommend to use the https url listed at the repo page on Windows, it really doesn’t like SSH keys. (And SSH-keys are complicated to set up). Also use SourceTree to do so.
-It’s possible to use GitKracken.
+Start by cloning the repo. I recommend to use the https url listed at the repo page on Windows, it really doesn’t like SSH keys. (And SSH-keys are complicated to set up). Also, use SourceTree to do so.
+It’s possible to use GitKraken.
 
 ## GitLab specific stuff
 
 * Has, like almost all git hosters, built-in pull requests.  
-* Has a autobuild (CI/CD) function that runs tests and publishes it as a website that we could potentially use. (It’s basically Momotor+website hosting, only you can write the tests now, and not the TU/e staff, and you don’t get a bad grade if your tests fail.)  
-* The master branch is restricted by default. It e.g. doesn’t allow you use a force push. (A push that rewrites history.)  
+* Has an autobuild (CI/CD) function that runs tests and publishes it as a website that we could potentially use. (It’s basically Momotor+website hosting, only you can write the tests now, and not the TU/e staff, and you don’t get a bad grade if your tests fail.)  
+* The master branch is restricted by default. It e.g. doesn’t allow you to use a force push. (A push that rewrites history.)  
 * If you sent a pull request, and there is a option to allow write access to other people, you should always enable that.
 * Use your username and password of GitLab when asked in SourceTree. I think there is a password reminder function somewhere but forgot where. 🤷‍♂️
 
