@@ -18,8 +18,11 @@ A git repo(sitory) consists of branches, the default being called ```master```. 
 Branches consist of a pointer to the last commit.  
 Commits are small versions or snapshots of your version of the source code, consisting of a snapshot of the version of the code, a pointer to the previous commit (a ```NIL``` pointer if it is the first one) and if it is a merge commit, (a commit that merges two branches), a second (and sometimes even a third in a 🐙merge) pointer to the commit it merges. Commits also contain metadata about the date they were created and the author. (For those who follow 2IL50, the commit history is btw a DAG)
 
-![git history](http://i.stack.imgur.com/DOXN0.png)  
+![git history](https://i.stack.imgur.com/DOXN0.png)  
 _A picture of a sample git commit history tree_
+
+![bad history](https://imgs.xkcd.com/comics/git_commit.png)  
+_A much less informative history, listed in ascending order instead of descending_
 
 #### Checking out a branch
 
@@ -33,6 +36,8 @@ For that, there are two operations, Push: sending your commits to the server; an
 We could just all use the master branch, but it’s also possible to use a new temporally branch, then asking someone else to review the code, (AKA sending a pull request) and then asking the reviewer to merge that code. (AKA merging a pull request) There are git repos where only the _‘dictator’_ (aka scrum master; aka probably Willem) has push permission on the master branch on the main repo and repos where everyone has. I don’t know which permission model is the best for this project, my suggestion is though to put some safeguards in place so someone doesn’t mess up the entire repo.  
 
 _(As of 1 April, there are restrictions in place to not directly push to master-branch for everyone except Tijmen and Willem. If you want to experiment, please use a fork. If you think you can bear the responsibility, please message them.)_
+
+There are some advanced options for the `pull` command, that make for a cleaner commit history, but they are complicated and outside the scope of this short tutorial.
 
 ![xkcd github for lesbians](https://imgs.xkcd.com/comics/branding.png)
 
