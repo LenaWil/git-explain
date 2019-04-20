@@ -3,7 +3,7 @@
 ## Intro
 
 Ok, first of all, apologies for the little bit abstract explanation. It’s a relatively complicated program, and I want you to know how it actually works, not just the magic commands that fix everything, because they don’t always work. And besides, we are university students, we can do this.
-I also recommend _(and assume you use something like)_ [SourceTree](https://www.sourcetreeapp.com/) as a GUI to git, which normally only has a CLI. [GitKraken](https://www.gitkraken.com/) also works.
+I also recommend _(and assume you use something like)_ [SourceTree](https://www.sourcetreeapp.com/) as a GUI to git, which normally only has a CLI. [GitKraken](https://www.gitkraken.com/) also works. A lot of editors like IDEA and visual studio code, also have plugins or built-in support for git.
 
 I don't go that much in depth in the actual commands, since I am assuming you use SourceTree. Also this is the first time I actually try to explain git to someone else, and I have no idea how much experience you guys have. If this goes too quickly, there is a way longer tutorial listed below. I think I already spent too much time on this. But please ~~leave a like and subscribe~~ let me know how it goes.  
 
