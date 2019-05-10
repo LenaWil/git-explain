@@ -46,9 +46,7 @@ Git works mostly offline. If you clone (aka download) a git repo, you also downl
 
 For that, there are two operations, Push: sending your commits to the server; and Pull: downloading the new commits from the server. (Insert another bad sex joke here) 
 `Push` fails if the commits on the server contain newer ones, `pull` doesn't unless there are merge-conflicts, which SourceTree will ask you to solve. Therefore, pull before you push. 
-We could just all use the master branch, but it’s also possible to use a new temporally branch, then asking someone else to review the code, (AKA sending a pull request or merge request) and then asking the reviewer to merge that code. (AKA merging a pull request) There are git repos where only the _‘dictator’_ (aka scrum master; aka probably Willem) has push permission on the master branch on the main repo and repos where everyone has. I don’t know which permission model is the best for this project, my suggestion is though to put some safeguards in place so someone doesn’t mess up the entire repo.  
-
-_(As of 1 April, there are restrictions in place to not directly push to master-branch for everyone except @TijmenW and Willem. If you want to experiment, please use a fork. If you think you can bear the responsibility, please message them.)_
+We could just all use the master branch, but it’s also possible to use a new temporally branch, then asking someone else to review the code, (AKA sending a pull request or merge request) and then asking the reviewer to merge that code. (AKA merging a pull request) There are git repos where only the _‘dictator’_ (aka scrum master) has push permission on the master branch on the main repo and repos where everyone has. I don’t know which permission model is the best for this project, my suggestion is though to put some safeguards in place so someone doesn’t mess up the entire repo.  
 
 There are some advanced options for the `pull` command, that make for a cleaner commit history, ~~but they are complicated and outside the scope of this short tutorial.~~ in the chapter below.
 
@@ -95,11 +93,8 @@ It’s possible to use GitKraken.
 
 ### Project structure
 
-* The repo url is <https://gitlab.com/2IOA0-y2019-g28/2IOA0>, the git one <https://gitlab.com/2IOA0-y2019-g28/2IOA0.git>, in theory it’s possible to make a second project under the url <https://gitlab.com/2IOA0-y2019-g28/second-project>.  
 * If you want a better, but longer, tutorial, that isn't written by me: <https://git-scm.com/book/en/v2>.  Also available in [Dutch](https://git-scm.com/book/nl/v2) and mostly available in [Polish](https://git-scm.com/book/pl/v2).
 * You can also look up the syntax of the CLI: <https://git-scm.com/docs/git-commit>.  
 * * Again, SourceTree is often easier.
-
-Feel free to ask questions.
 
 Tijmen Wildervanck
