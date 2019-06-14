@@ -50,7 +50,9 @@ We could just all use the master branch, but it’s also possible to use a new t
 
 There are some advanced options for the `pull` command, that make for a cleaner commit history, ~~but they are complicated and outside the scope of this short tutorial.~~ in the chapter below.
 
+<!---
 ![xkcd GitHub for lesbians](https://imgs.xkcd.com/comics/branding.png)
+-->
 
 ### `git rebase`, `git commit --amend`, `git reflog` and `git reset`
 
