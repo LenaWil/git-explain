@@ -3,7 +3,7 @@
 _Author: Tijmen Wildervanck_  
 ©: CC-by-nc-sa 4.0
 
-Originally written for TU/e students. 
+This Document has originally been written for TU/e students. 
 
 ## Intro
 
