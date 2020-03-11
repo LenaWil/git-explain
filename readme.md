@@ -8,7 +8,9 @@ This Document has originally been written for TU/e students.
 ## Intro
 
 Ok, first of all, apologies for the abstractness of the explanation. It’s a relatively complicated program, and it's best to know how it actually works, not just the magic commands that fix everything, because they don’t always work. And besides, the original target audience of this summary were computer science students with a 9 or higher for 2IP90, they should be able to do this.  
-I also recommend _(and assume you use something like)_ [SourceTree](https://www.sourcetreeapp.com/) as a GUI to git, which normally only has a CLI. [GitKraken](https://www.gitkraken.com/) also works. There is a list of other GUI's [here](https://git-scm.com/downloads/guis/). A lot of editors like IDEA and Visual Studio Code, also have plugins or built-in support for git, however not always very extensive. 
+I also recommend _(and assume you use something like)_ [SourceTree](https://www.sourcetreeapp.com/) as a GUI to git, which normally only has a CLI. [GitKraken](https://www.gitkraken.com/) also works. There is a list of other GUI's [here](https://git-scm.com/downloads/guis/). A lot of editors like IDEA and Visual Studio Code, also have plugins or built-in support for git, however not always very extensive. (But still more extensive than the GitHub client, but less user friendly.)
+
+_If you use GitHub, it's also possible to use the GitHub app. However, be aware that it hides a lot of the functions the git originally has._
 
 I don't go that much in depth in the actual commands since I am assuming you use SourceTree, and it's possible to look it up. Also, this is the first time I actually try to explain git to someone else, and I have no idea how much experience you guys have. If this goes too quickly, there is a way longer tutorial listed below. I think I already spent too much time on this. But please ~~leave a like and subscribe~~ let me know how it goes.  
 
@@ -46,13 +48,19 @@ Git works mostly offline. If you clone (aka download) a git repo, you also downl
 
 For that, there are two operations, Push: sending your commits to the server; and Pull: downloading the new commits from the server. (Insert another bad sex joke here) 
 `Push` fails if the commits on the server contain newer ones, `pull` doesn't unless there are merge-conflicts, which SourceTree will ask you to solve. Therefore, pull before you push. 
+
+Pulls you do after you committed something do however make merges messy for the other people on the branch. Most of the time, this isn't that much of a problem, but if you have commited a lot, it messes up stuff and you are recommended to branch before you push.  
+It's also possible to use the pull and rebase option, this makes the commit history cleaner, but it's harder 
+
 We could just all use the master branch, but it’s also possible to use a new temporally branch, then asking someone else to review the code, (AKA sending a pull request or merge request) and then asking the reviewer to merge that code. (AKA merging a pull request) There are git repos where only the _‘dictator’_ (aka scrum master) has push permission on the master branch on the main repo and repos where everyone has. I don’t know which permission model is the best for this project, my suggestion is though to put some safeguards in place so someone doesn’t mess up the entire repo.  
+
+_I added a build-system for 2IS70, so it's safe._
 
 There are some advanced options for the `pull` command, that make for a cleaner commit history, ~~but they are complicated and outside the scope of this short tutorial.~~ in the chapter below.
 
-<!---
+
 ![xkcd GitHub for lesbians](https://imgs.xkcd.com/comics/branding.png)
--->
+
 
 ### `git rebase`, `git commit --amend`, `git reflog` and `git reset`
 
@@ -81,7 +89,11 @@ Last, but not least: `git fetch`. Git has a possibility to bookmark repo-URLs. B
 ## Practical things
 
 Start by cloning the repo. I recommend to use the https URL listed at the repo page on Windows, it really doesn’t like SSH keys. (And SSH-keys are complicated to set up). Also, use SourceTree to do so.
-It’s possible to use GitKraken.  
+It’s possible to use GitKraken.
+
+## Merge conflicts
+
+Merge conflicts are complicated. Select p4merge as default tool in sourcetree, and if you don't succeed, please just ask me for help. 
 
 ### GitLab specific stuff
 
