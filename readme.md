@@ -1,6 +1,6 @@
 # Git: an abstract overview
 
-_Author: Tijmen Wildervanck_  
+_Author: Lena Wildervanck_  
 ©: CC-by-nc-sa 4.0
 
 This Document has originally been written for TU/e students. 
@@ -50,9 +50,8 @@ We could just all use the master branch, but it’s also possible to use a new t
 
 There are some advanced options for the `pull` command, that make for a cleaner commit history, ~~but they are complicated and outside the scope of this short tutorial.~~ in the chapter below.
 
-<!---
 ![xkcd GitHub for lesbians](https://imgs.xkcd.com/comics/branding.png)
--->
+
 
 ### `git rebase`, `git commit --amend`, `git reflog` and `git reset`
 
@@ -99,4 +98,4 @@ It’s possible to use GitKraken.
 * You can also look up the syntax of the CLI: <https://git-scm.com/docs/git-commit>.  
 * * Again, SourceTree is often easier.
 
-Tijmen Wildervanck
+Lena Wildervanck
