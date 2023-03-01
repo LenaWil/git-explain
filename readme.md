@@ -46,7 +46,7 @@ Git works mostly offline. If you clone (aka download) a git repo, you also downl
 
 ### `Push` and `Pull`
 
-For that, there are two operations, Push: sending your commits to the server; and Pull: downloading the new commits from the server. (Insert another bad sex joke here) 
+For that, there are two operations, Push: sending your commits to the server; and Pull: downloading the new commits from the server. 
 `Push` fails if the commits on the server contain newer ones, `pull` doesn't unless there are merge-conflicts, which SourceTree will ask you to solve. Therefore, pull before you push. 
 We could just all use the master branch, but it’s also possible to use a new temporally branch, then asking someone else to review the code, (AKA sending a pull request or merge request) and then asking the reviewer to merge that code. (AKA merging a pull request) There are git repos where only the _‘dictator’_ (aka scrum master) has push permission on the master branch on the main repo and repos where everyone has. I don’t know which permission model is the best for this project, my suggestion is though to put some safeguards in place so someone doesn’t mess up the entire repo.  
 
