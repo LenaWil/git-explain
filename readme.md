@@ -52,7 +52,7 @@ For that, there are two operations, Push: sending your commits to the server; an
 Pull do sometimes create merge commits with the commits in the ‘wrong’ order, which is confusing behaviour people complained about. Git pull with the rebase option leads a less confusing but also less accurate commit graph, which is why that’s sometimes used.   
 We could just all use the master branch, but it’s also possible to use a new temporally branch, then asking someone else to review the code, (AKA sending a pull request or merge request) and then asking the reviewer to merge that code. (AKA merging a pull request) There are git repos where only the _‘dictator’_ (aka scrum master) has push permission on the master branch on the main repo and repos where everyone has. I don’t know which permission model is the best for this project, my suggestion is though to put some safeguards in place so someone doesn’t mess up the entire repo.  
 
-There are some advanced options for the `pull` command, that make for a cleaner commit history, ~~but they are complicated and outside the scope of this short tutorial.~~ in the chapter below. (sorta
+There are some advanced options for the `pull` command, that make for a cleaner commit history, ~~but they are complicated and outside the scope of this short tutorial.~~ in the chapter below. (sorta)
 
 ![xkcd GitHub for lesbians](https://imgs.xkcd.com/comics/branding.png)
 
