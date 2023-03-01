@@ -30,6 +30,8 @@ Commits are small versions or snapshots of your version of the source code, cons
 Commits are immutable, and the pointer is a cryptographic hash.  
 Selecting files to commit is called staging.
 
+With `git add` your stage files, and with `git commit` you commit files.
+
 ![git history](https://i.stack.imgur.com/DOXN0.png)  
 _A picture of a sample git commit history tree_
 
