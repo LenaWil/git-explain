@@ -23,9 +23,10 @@ There are hosting providers of git servers, most well known are GitHub, GitLab �
 
 ### Branches, commits and clones
 
-A git repo(sitory) consists of branches, the default being called ```master```. (insert bad BDSM joke here)  
+A git repo(sitory) consists of branches, the default being called ```master```. (insert bad BDSM joke here) 
+In recent versions it might have been changed to `main`. ~~Not even misstress, this is sexism.~~
 Branches consist of a pointer to the last `commit`.  
-Commits are small versions or snapshots of your version of the source code, consisting of a snapshot of the version of the code, a pointer to the previous commit (a ```NIL``` pointer if it is the first one) and if it is a merge commit, (a commit that merges two branches), a second (and sometimes even a third in a 🐙merge) pointer to the commit it merges. Commits also contain metadata about the date they were created and the author. (For those who follow or have followed 2IL50, the commit history is btw a DAG.)
+Commits are small versions or snapshots of your version of the source code, consisting of a snapshot of the version of the code, a pointer to the previous commit (a ```NIL``` or `null` pointer if it is the first one) and if it is a merge commit, (a commit that merges two branches), a second (and sometimes even a third in a 🐙merge) pointer to the commit it merges. Commits also contain metadata about the date they were created and the author. (For those who follow or have followed 2IL50, the commit history is btw a DAG.)
 
 Commits are immutable, and the pointer is a cryptographic hash.  
 Selecting files to commit is called staging.
@@ -47,10 +48,11 @@ Git works mostly offline. If you clone (aka download) a git repo, you also downl
 ### `Push` and `Pull`
 
 For that, there are two operations, Push: sending your commits to the server; and Pull: downloading the new commits from the server. 
-`Push` fails if the commits on the server contain newer ones, `pull` doesn't unless there are merge-conflicts, which SourceTree will ask you to solve. Therefore, pull before you push. 
+`Push` fails if the commits on the server contain newer ones, `pull` doesn't unless there are merge-conflicts, which SourceTree will ask you to solve. Therefore, pull before you push.   
+Pull do sometimes create merge commits with the commits in the ‘wrong’ order, which is confusing behaviour people complained about. Git pull with the rebase option leads a less confusing but also less accurate commit graph, which is why that’s sometimes used.   
 We could just all use the master branch, but it’s also possible to use a new temporally branch, then asking someone else to review the code, (AKA sending a pull request or merge request) and then asking the reviewer to merge that code. (AKA merging a pull request) There are git repos where only the _‘dictator’_ (aka scrum master) has push permission on the master branch on the main repo and repos where everyone has. I don’t know which permission model is the best for this project, my suggestion is though to put some safeguards in place so someone doesn’t mess up the entire repo.  
 
-There are some advanced options for the `pull` command, that make for a cleaner commit history, ~~but they are complicated and outside the scope of this short tutorial.~~ in the chapter below.
+There are some advanced options for the `pull` command, that make for a cleaner commit history, ~~but they are complicated and outside the scope of this short tutorial.~~ in the chapter below. (sorta
 
 ![xkcd GitHub for lesbians](https://imgs.xkcd.com/comics/branding.png)
 
