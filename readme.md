@@ -3,7 +3,7 @@
 _Author: Lena Wildervanck_  
 ©: CC-by-nc-sa 4.0
 
-This Document has originally been written for TU/e students. 
+This document has originally been written for TU/e students. 
 
 ## Intro
 
